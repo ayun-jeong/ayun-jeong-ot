@@ -208,6 +208,33 @@ figcaption{ font-size:13.5px; color:var(--grey500); line-height:1.6; }
 .chip.new{ background:var(--blue-bg); color:var(--blue-dark); }
 .chip.new::after{ content:"NEW"; font-size:10px; font-weight:800; margin-left:6px; opacity:.75; }
 .chip.solo{ background:var(--green-bg); color:var(--green); }
+.chip.sm{ font-size:13px; padding:5px 11px; }
+.chip-plus{
+  align-self:center; color:var(--grey400);
+  font-size:14px; font-weight:700; padding:0 2px;
+}
+
+/* ---------- 앱 배너 주차 ---------- */
+.weeks{ display:flex; flex-direction:column; gap:10px; }
+.wk{
+  background:var(--grey50); border-radius:var(--radius-sm);
+  padding:18px 20px; display:flex; flex-direction:column; gap:14px;
+}
+.wk-head{ display:flex; align-items:center; flex-wrap:wrap; gap:10px; }
+.wk-n{
+  width:24px; height:24px; flex:none; border-radius:7px;
+  background:var(--blue); color:#fff;
+  display:grid; place-items:center;
+  font-size:13px; font-weight:800;
+}
+.wk-t{ font-size:16.5px; font-weight:700; letter-spacing:-0.5px; }
+.wk-sub{ display:flex; flex-direction:column; gap:8px; }
+.wk-lab{
+  font-size:12.5px; font-weight:700; color:var(--blue);
+  letter-spacing:-0.2px;
+}
+.wk .bul > li{ font-size:15px; }
+
 .chip.pending{
   background:transparent; color:var(--grey500);
   border:1px dashed var(--grey300);
