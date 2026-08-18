@@ -214,6 +214,21 @@ figcaption{ font-size:13.5px; color:var(--grey500); line-height:1.6; }
   font-size:14px; font-weight:700; padding:0 2px;
 }
 
+/* ---------- 콘텐츠 구성 페이지 ---------- */
+.pages{ display:flex; flex-wrap:wrap; gap:8px; }
+.pg{
+  display:flex; align-items:center; gap:8px;
+  background:var(--grey50); border-radius:10px;
+  padding:9px 14px 9px 10px;
+}
+.pg .pn{
+  width:20px; height:20px; flex:none; border-radius:6px;
+  background:var(--white); border:1px solid var(--grey200);
+  display:grid; place-items:center;
+  font-size:11.5px; font-weight:800; color:var(--blue);
+}
+.pg .pt{ font-size:14.5px; font-weight:600; color:var(--grey700); white-space:nowrap; }
+
 /* ---------- 앱 배너 주차 ---------- */
 .weeks{ display:flex; flex-direction:column; gap:10px; }
 .wk{
