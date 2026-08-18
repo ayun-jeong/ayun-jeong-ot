@@ -208,6 +208,11 @@ figcaption{ font-size:13.5px; color:var(--grey500); line-height:1.6; }
 .chip.new{ background:var(--blue-bg); color:var(--blue-dark); }
 .chip.new::after{ content:"NEW"; font-size:10px; font-weight:800; margin-left:6px; opacity:.75; }
 .chip.solo{ background:var(--green-bg); color:var(--green); }
+.chip.pending{
+  background:transparent; color:var(--grey500);
+  border:1px dashed var(--grey300);
+  padding:6px 13px;
+}
 
 /* ---------- KPI ---------- */
 .kpis{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; }
