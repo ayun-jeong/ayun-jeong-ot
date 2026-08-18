@@ -475,3 +475,9 @@ img{
 }
 /* 링크·버튼은 그대로 동작 */
 a, button, iframe{ -webkit-user-select:none; user-select:none; }
+
+/* 주차 블록 안의 예시 이미지 */
+.wk-sub figure img{ background:var(--white); }
+.wk-sub .pages .pg{ background:var(--white); }
+.wk-sub .chip{ background:var(--white); }
+.wk-sub .chip.pending{ background:transparent; }
