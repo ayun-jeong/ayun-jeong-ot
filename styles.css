@@ -229,7 +229,7 @@ figcaption{ font-size:13.5px; color:var(--grey500); line-height:1.6; }
   display:grid; place-items:center;
   font-size:11.5px; font-weight:800; color:var(--blue);
 }
-.pg .pt{ font-size:14.5px; font-weight:600; color:var(--grey700); white-space:nowrap; }
+.pg .pt{ font-size:14.5px; font-weight:600; color:var(--grey700); line-height:1.5; }
 
 /* ---------- 앱 배너 주차 ---------- */
 .weeks{ display:flex; flex-direction:column; gap:10px; }
