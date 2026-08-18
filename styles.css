@@ -113,6 +113,8 @@ h2{
   line-height:1.35; margin:0 0 14px;
 }
 .lead{ font-size:17px; color:var(--grey600); line-height:1.7; margin:0 0 40px; max-width:38em; font-weight:500; }
+/* 리드 문장이 없는 섹션도 같은 간격 유지 */
+h2 + .stack, h2 + .stack-lg, h2 + .tabs{ margin-top:26px; }
 h3{ font-size:21px; font-weight:700; letter-spacing:-0.7px; line-height:1.4; margin:0; }
 h4{ font-size:17px; font-weight:700; letter-spacing:-0.5px; line-height:1.5; margin:0; }
 p{ margin:0; }
