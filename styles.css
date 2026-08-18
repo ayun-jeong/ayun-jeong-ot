@@ -318,9 +318,13 @@ figcaption{ font-size:13.5px; color:var(--grey500); line-height:1.6; }
   align-self:center; flex:none;
   color:var(--grey300); font-size:18px; font-weight:700;
 }
-@media (max-width:520px){
-  .sched{ flex-direction:column; gap:8px; }
-  .sarrow{ align-self:flex-start; margin-left:18px; transform:rotate(90deg); }
+@media (max-width:560px){
+  .sched{ gap:6px; flex-wrap:nowrap; }
+  .sd{ flex:1 1 0; min-width:0; padding:10px 12px; gap:1px; }
+  .sd .sl{ font-size:11px; letter-spacing:-0.3px; }
+  .sd .sv{ font-size:15px; letter-spacing:-0.5px; }
+  .sd .sv em{ font-size:11.5px; margin-left:4px; }
+  .sarrow{ font-size:14px; }
 }
 
 /* ---------- footer ---------- */
