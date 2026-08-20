@@ -527,3 +527,20 @@ a, button, iframe{ -webkit-user-select:none; user-select:none; }
 .wk-sub .pages .pg{ background:var(--white); }
 .wk-sub .chip{ background:var(--white); }
 .wk-sub .chip.pending{ background:transparent; }
+
+/* ---------- 링크 카드 ---------- */
+.linkcard{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  border:1px solid var(--grey200); border-radius:var(--radius);
+  background:var(--white); padding:20px 20px 20px 24px;
+}
+.lc-text{ display:flex; flex-direction:column; gap:3px; min-width:0; }
+.lc-name{ font-size:17px; font-weight:700; letter-spacing:-0.5px; color:var(--grey900); }
+.lc-url{
+  font-size:13.5px; color:var(--grey500); font-weight:500;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+@media (max-width:480px){
+  .linkcard{ flex-direction:column; align-items:stretch; gap:14px; padding:20px; }
+  .linkcard .btn{ text-align:center; }
+}
