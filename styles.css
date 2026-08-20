@@ -92,8 +92,34 @@ a{ color:inherit; }
   font-size:clamp(16px,2.2vw,19px); color:var(--grey600);
   line-height:1.65; margin:0 0 36px; max-width:34em; font-weight:500;
 }
-/* 설명 문단이 없을 때도 제목과 정보 카드 사이 간격 유지 */
-h1 + .meta-card{ margin-top:16px; }
+/* ---------- 히어로 목차 ---------- */
+.toc{
+  display:flex; flex-direction:column;
+  margin:32px 0 36px;
+  border-top:1px solid var(--grey100);
+}
+.toc a{
+  display:flex; align-items:baseline; gap:14px;
+  padding:15px 4px;
+  border-bottom:1px solid var(--grey100);
+  text-decoration:none;
+  transition:background .15s, padding-left .15s;
+}
+.toc a:hover{ background:var(--grey50); padding-left:10px; }
+.toc .tc{
+  flex:none; width:74px;
+  font-size:13px; font-weight:700; color:var(--blue);
+  letter-spacing:-0.2px;
+}
+.toc .tt{
+  font-size:17px; font-weight:600; color:var(--grey800);
+  letter-spacing:-0.5px; line-height:1.45;
+}
+@media (max-width:520px){
+  .toc a{ flex-direction:column; gap:3px; padding:13px 4px; }
+  .toc .tc{ width:auto; font-size:12px; }
+  .toc .tt{ font-size:16px; }
+}
 .meta-card{
   background:var(--grey50); border-radius:var(--radius);
   padding:22px 24px;
