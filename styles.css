@@ -92,6 +92,8 @@ a{ color:inherit; }
   font-size:clamp(16px,2.2vw,19px); color:var(--grey600);
   line-height:1.65; margin:0 0 36px; max-width:34em; font-weight:500;
 }
+/* 설명 문단이 없을 때도 제목과 정보 카드 사이 간격 유지 */
+h1 + .meta-card{ margin-top:16px; }
 .meta-card{
   background:var(--grey50); border-radius:var(--radius);
   padding:22px 24px;
